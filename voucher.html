@@ -9,8 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Blueprint: A responsive product grid layout with touch-friendly Flickity galleries and Isotope-powered filter functionality." />
   <meta name="keywords" content="blueprint, template, layout, grid, responsive, products, store, filter, isotope, flickity" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Font Awesome
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- Pixel Fabric clothes icons -->
   <link rel="stylesheet" type="text/css" href="Grid/fonts/pixelfabric-clothes/style.css" />
   <!-- General demo styles & header -->
@@ -58,7 +59,7 @@ body {
 }
 
 .titulo .slider__item {
-  background: rgba(75, 119, 88, 0.7);
+  background: #14abe1;
   border-radius: 3px;
   padding: 15px 0;
   color:#fff;
@@ -89,7 +90,7 @@ body {
 <header class="w3-top w3-bar w3-theme">
   <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
   <h2 class="w3-bar-item">Início</h2>
-    <img src="stmarche.png" class="logo" style="margin-top: -30px;">
+    <img src="img/netshoes.png" class="logo" style="margin-top: -30px;">
 </header>
 
 <div class="w3-container" style="margin-top:65px">
@@ -100,15 +101,15 @@ body {
       <span class="filter__label">Filter: </span>
       <button id = "botao" onclick="ajustarProdutos()" class="action filter__item filter__item--selected" data-filter=".voucher">All</button>
 
-      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".jackets"><i class="fa fa-cutlery fa-lg"></i><span class="action__text">Alimentos</span></button>
+      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".jackets"><i class="fas fa-male fa-lg"></i><span class="action__text"> Homens</span></button>
 
-      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".shirts"><i class="fa fa-beer fa-lg"></i><span class="action__text">Bebidas</span></button>
+      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".shirts"><i class="fas fa-female fa-lg"></i><span class="action__text"> Mulheres</span></button>
 
-      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".dresses"><i class="fa fa-flask fa-lg"></i><span class="action__text">Temperos</span></button>
+      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".dresses"><i class="fas fa-child fa-lg"></i><span class="action__text">Crianças</span></button>
 
-      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".trousers"><i class="fa fa-pagelines fa-lg"></i><span class="action__text">Verduras</span></button>
+      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".trousers"><i class="fas fa-bicycle fa-lg"></i><span class="action__text"> Bicicletas</span></button>
 
-      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".shoes"><i class="fa fa-ticket fa-lg"></i><span class="action__text">Sobremesas</span></button>
+      <button onclick="ajustarProdutos()" class="action filter__item" data-filter=".shoes"><i class="fas fa-utensils fa-lg"></i><span class="action__text"> Suplementos</span></button>
 
 
     </div>
@@ -139,26 +140,26 @@ body {
 
       <div class="grid__item shirts oe-item" id="Desconto 30 Sucos Naturais" style="transform: translateY(18%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Dri/sucomaca.png" alt="Dummy" /></div>
-          <div class="slider__item"><img src="Produtos/Dri/sucouva.png" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/tenis/under-armor.png" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/tenis/nike.png" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Sucos Naturais</h3>
-          <span class="meta__brand">900ml</span>
-          <span class="meta__price">30%</span>
+          <h3 class="meta__title">Tênis de Corrida</h3>
+          <span class="meta__brand">Várias Marcas</span>
+          <span class="meta__price">Até 30%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>  
       </div>
 
       <div class="grid__item trousers oe-item" id="Desconto 25 Antepastos"  style="transform: translateY(18%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Leg/tomateseco.png" style="width: 130px; padding-top: 25px;" alt="Dummy" /></div>
-          <div class="slider__item"><img src="Produtos/Leg/berinjela.png" style="width: 130px; padding-top: 25px;" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/camiseta/under-armor.png" style="width: 130px; padding-top: 30px;" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/camiseta/nike.png" style="width: 130px; padding-top: 30px;" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Antepastos</h3>
-          <span class="meta__brand">210g</span>
-          <span class="meta__price">25%</span>
+          <h3 class="meta__title">Camisetas</h3>
+          <span class="meta__brand">Casual</span>
+          <span class="meta__price">Até 25%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
       </div>
@@ -177,11 +178,11 @@ body {
 
       <div id="Desconto 25 Azeite"  class="grid__item dresses oe-item" style="transform: translateY(18%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Mol/azeite.png" style="height: 150px; width: 70px;" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/relogio/tomtom.png" style="height: 120px; width: 120px;" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Azeite</h3>
-          <span class="meta__brand">500ml</span>
+          <h3 class="meta__title">Relógios de Corrida</h3>
+          <span class="meta__brand">Tomtom</span>
           <span class="meta__price">25%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -200,11 +201,11 @@ body {
 
       <div class="grid__item shirts de-item" id="Desconto 15 Vinho" style="transform: translateY(50%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Dri/vinho.png" style="padding-top: 20px; width: 150px; height: 155px" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/tenis/asics-pronada.png" style="padding-top: 20px; width: 150px; height: 155px" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Vinho Argentino</h3>
-          <span class="meta__brand">750ml</span>
+          <h3 class="meta__title">Asics Kayano 23</h3>
+          <span class="meta__brand">Pisada Pronada</span>
           <span class="meta__price">15%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -237,12 +238,12 @@ body {
 
       <div id="Desconto 15 Pizza" class="grid__item jackets de-item" style="transform: translateY(50%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Ali/pizza.png" style="padding-top: 20px; width: 150px; height: 155px" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/bermuda/nike.png" style="padding-top: 20px; width: 150px; height: 155px" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Pizza Mussarela</h3>
-          <span class="meta__brand">460g</span>
-          <span class="meta__price">15%</span>
+          <h3 class="meta__title">Bermudas</h3>
+          <span class="meta__brand">Dry-Fit</span>
+          <span class="meta__price">25%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
       </div>
@@ -259,11 +260,11 @@ body {
 
       <div id="Desconto 15 Babaganoush" class="grid__item dresses nov-item" style="transform: translateY(82%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Mol/babaganoush.png" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/bone/adidas.png" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Babaganoush</h3>
-          <span class="meta__brand">200g</span>
+          <h3 class="meta__title">Boné Adidas</h3>
+          <span class="meta__brand">Cores Diversas</span>
           <span class="meta__price">15%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -271,11 +272,11 @@ body {
 
       <div id="Desconto 25 Fondue" class="grid__item shoes nov-item" style="transform: translateY(82%);">
         <div class="slider">
-          <div class="slider__item"><img src="Produtos/Doc/fondue.png" alt="Dummy" /></div>
+          <div class="slider__item"><img src="Produtos/bone/viseira-nike.png" alt="Dummy" /></div>
         </div>
         <div class="meta">
-          <h3 class="meta__title">Fondue</h3>
-          <span class="meta__brand">200g</span>
+          <h3 class="meta__title">Viseiras Nike</h3>
+          <span class="meta__brand">Diversos Modelos</span>
           <span class="meta__price">25%</span>
         </div>
         <button onclick="$(this).attr('disabled', 'disabled');" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>

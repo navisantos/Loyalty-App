@@ -490,7 +490,8 @@ a {
     width: auto;
     border: none;
     outline: none;
-    display: block
+    display: block;
+    color: white;
 }
 .w3-bar .w3-dropdown-hover,
 .w3-bar .w3-dropdown-click {
